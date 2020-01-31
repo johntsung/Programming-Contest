@@ -1,0 +1,5 @@
+# Problem exported by DOMjudge on 2019-12-31T20:45:44+08:00
+name: K-Code_39
+validator_flags: case_sensitive
+limits:
+    memory: 10
