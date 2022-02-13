@@ -13,11 +13,11 @@ void dfs(int num){
 		return ;
 	}
 	for(int k=0;k<len[num] && !found;k++){
-		if(num_len[num]-k<=ans) break;
+		if(num+len[num]-k<=ans) break;
 		int i=List[num][k];
 		if(num+mc[i]<=ans) break;
 		int j;
-		for(int j=k+1,len[num+1]=0;j<len[num];j++){
+		for(j=k+1,len[num+1]=0;j<len[num];j++){
 			if(adj[i][List[num][j]]){
 				List[num+1][len[num+1]++]=List[num][j];
 			}
