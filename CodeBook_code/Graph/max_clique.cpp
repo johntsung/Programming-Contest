@@ -4,6 +4,8 @@ int len[MAX_N+4];
 int adj[MAX_N+4][MAX_N+4],vis[MAX_N+4][MAX_N+4];
 int List[MAX_N+4][MAX_N+4];
 int mc[MAX_N+4];
+bool found;
+int ans;
 void dfs(int num){
 	if(len[num]==0){
 		if(num>ans){
